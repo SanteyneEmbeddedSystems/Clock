@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Software_Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Clock</Name>
+  <Identifier>514d12f4-5630-49fc-b7c2-b60a8b8fc777</Identifier>
+  <Description />
+  <Packages_References>
+    <Package_Reference>
+      <Last_Known_Name>Clock</Last_Known_Name>
+      <Relative_Path>Clock.pkgx</Relative_Path>
+      <Is_Writable>true</Is_Writable>
+    </Package_Reference>
+  </Packages_References>
+</Software_Project>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><svg  Version="1.1"  xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink"  xmlns:svg="http://www.w3.org/2000/svg"  width="682px" height="740px">  <style>text{font-size:12px;font-family:Consolas;fill:gray;text-anchor:start;}</style>  <style>svg { background-Color: black; color: white;}</style>
+  <defs>
+  <g id="127e3ae9-7752-4f19-b003-78477f9d1ba2_alt">
+  <defs>
+  <g id="09fdb16f-5379-4e8c-b005-77e07f32f789">
+  <rect x="0px" y="0px" width="230px" height="35px"
+    style="fill:rgb(136,0,21);fill-opacity:0.3;stroke:rgb(136,0,21);stroke-width:1px"/>
+  <text style="font-size:10px;text-anchor:middle;" x="115px" y="13px">&lt;&lt;Enumerated_Type&gt;&gt;</text>
+  <text style="font-size:12px;text-anchor:middle;font-weight:bold;" x="115px" y="28px">E_Day</text>
+  <rect x="0px" y="35px" width="230px" height="35px"
+    style="fill:rgb(136,0,21);fill-opacity:0.2;stroke:rgb(136,0,21);stroke-width:1px"/>
+  <text style="font-size:12px;" x="10px" y="48px">Allows to model a data that</text>
+  <text style="font-size:12px;" x="10px" y="63px">represent a day of the week.</text>
+  <rect x="0px" y="70px" width="230px" height="110px"
+    style="fill:rgb(136,0,21);fill-opacity:0.2;stroke:rgb(136,0,21);stroke-width:1px"/>
+  <text style="font-size:12px;" x="10px" y="83px">MONDAY</text>
+  <text style="font-size:12px;" x="10px" y="98px">TUESDAY</text>
+  <text style="font-size:12px;" x="10px" y="113px">WEDNESDAY</text>
+  <text style="font-size:12px;" x="10px" y="128px">THURSDAY</text>
+  <text style="font-size:12px;" x="10px" y="143px">FRIDAY</text>
+  <text style="font-size:12px;" x="10px" y="158px">SATURDAY</text>
+  <text style="font-size:12px;" x="10px" y="173px">SUNDAY</text>
+  </g>
+  </defs>
+  <use xlink:href="#09fdb16f-5379-4e8c-b005-77e07f32f789" transform="translate(0,0)" />
+  <defs>
+  <g id="058963e7-375f-4f57-aceb-5a2f36b75490">
+  <rect x="0px" y="0px" width="230px" height="35px"
+    style="fill:rgb(136,0,21);fill-opacity:0.3;stroke:rgb(136,0,21);stroke-width:1px"/>
+  <text style="font-size:10px;text-anchor:middle;" x="115px" y="13px">&lt;&lt;basic_type&gt;&gt;</text>
+  <text style="font-size:12px;text-anchor:middle;font-weight:bold;" x="115px" y="28px">uint8</text>
+  <rect x="0px" y="35px" width="230px" height="65px"
+    style="fill:rgb(136,0,21);fill-opacity:0.2;stroke:rgb(136,0,21);stroke-width:1px"/>
+  <text style="font-size:12px;" x="10px" y="48px">Pre-defined basic data type</text>
+  <text style="font-size:12px;" x="10px" y="63px">which allows to model a data</text>
+  <text style="font-size:12px;" x="10px" y="78px">representing a unsigned integer</text>
+  <text style="font-size:12px;" x="10px" y="93px">value from 0 to 255.</text>
+  </g>
+  </defs>
+  <use xlink:href="#058963e7-375f-4f57-aceb-5a2f36b75490" transform="translate(250,0)" />
+  <defs>
+  <g id="7305b938-f013-43f1-8a8c-408622d9007c">
+  <rect x="0px" y="0px" width="230px" height="35px"
+    style="fill:rgb(34,177,76);fill-opacity:0.3;stroke:rgb(34,177,76);stroke-width:1px"/>
+  <text style="font-size:10px;text-anchor:middle;" x="115px" y="13px">&lt;&lt;Client_Server_Interface&gt;&gt;</text>
+  <text style="font-size:12px;text-anchor:middle;font-weight:bold;font-style:italic;" x="115px" y="28px">Clock_Data</text>
+  <rect x="0px" y="35px" width="230px" height="35px"
+    style="fill:rgb(34,177,76);fill-opacity:0.2;stroke:rgb(34,177,76);stroke-width:1px"/>
+  <text style="font-size:12px;" x="10px" y="48px">Gathers operations allowing to</text>
+  <text style="font-size:12px;" x="10px" y="63px">access the data of a clock.</text>
+  <rect x="0px" y="70px" width="230px" height="140px"
+    style="fill:rgb(34,177,76);fill-opacity:0.2;stroke:rgb(34,177,76);stroke-width:1px"/>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="83px">+ Get_Clock(</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="98px">&#160;&#160;&#160;&#160;&#160;&#160;IN day:E_Day,</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="113px">&#160;&#160;&#160;&#160;&#160;&#160;IN hour:uint8,</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="128px">&#160;&#160;&#160;&#160;&#160;&#160;IN minute:uint8,</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="143px">&#160;&#160;&#160;&#160;&#160;&#160;IN second:uint8 )</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="158px">+ Get_Day( IN day:E_Day )</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="173px">+ Get_Hour( IN hour:uint8 )</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="188px">+ Get_Minute( IN minute:uint8 )</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="203px">+ Get_Second( IN second:uint8 )</text>
+  </g>
+  </defs>
+  <use xlink:href="#7305b938-f013-43f1-8a8c-408622d9007c" transform="translate(0,200)" />
+  <defs>
+  <g id="f32261cc-952b-4429-ba87-e00f4f02d761">
+  <rect x="0px" y="0px" width="230px" height="35px"
+    style="fill:rgb(34,177,76);fill-opacity:0.3;stroke:rgb(34,177,76);stroke-width:1px"/>
+  <text style="font-size:10px;text-anchor:middle;" x="115px" y="13px">&lt;&lt;Client_Server_Interface&gt;&gt;</text>
+  <text style="font-size:12px;text-anchor:middle;font-weight:bold;font-style:italic;" x="115px" y="28px">Clock_Setting</text>
+  <rect x="0px" y="35px" width="230px" height="35px"
+    style="fill:rgb(34,177,76);fill-opacity:0.2;stroke:rgb(34,177,76);stroke-width:1px"/>
+  <text style="font-size:12px;" x="10px" y="48px">Gathers operations allowing to</text>
+  <text style="font-size:12px;" x="10px" y="63px">set a clock.</text>
+  <rect x="0px" y="70px" width="230px" height="200px"
+    style="fill:rgb(34,177,76);fill-opacity:0.2;stroke:rgb(34,177,76);stroke-width:1px"/>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="83px">+ Set_Clock(</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="98px">&#160;&#160;&#160;&#160;&#160;&#160;IN day:E_Day,</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="113px">&#160;&#160;&#160;&#160;&#160;&#160;IN hour:uint8,</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="128px">&#160;&#160;&#160;&#160;&#160;&#160;IN minute:uint8,</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="143px">&#160;&#160;&#160;&#160;&#160;&#160;IN second:uint8 )</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="158px">+ Increment_Day()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="173px">+ Increment_Hour()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="188px">+ Increment_Minute()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="203px">+ Increment_Second()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="218px">+ Decrement_Day()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="233px">+ Decrement_Hour()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="248px">+ Decrement_Minute()</text>
+  <text style="font-size:12px;font-style:italic;" x="10px" y="263px">+ Decrement_Second()</text>
+  </g>
+  </defs>
+  <use xlink:href="#f32261cc-952b-4429-ba87-e00f4f02d761" transform="translate(0,430)" />
+  <defs>
+  <g id="127e3ae9-7752-4f19-b003-78477f9d1ba2">
+  <defs>
+  <g id="36210882-4993-4f88-8213-b9dd701e0383">
+  <text style="font-size:12px;text-anchor:end;" x="108px" y="15px">Data:Clock_Data</text>
+  <rect x="108px" y="18px" width="16px" height="16px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  <line x1="98px" y1="26px" x2="108px" y2="26px"
+    style="stroke:rgb(255,255,255);stroke-width:1px"/>
+  <circle cx="90px" cy="26px" r="8px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  </g>
+  </defs>
+  <defs>
+  <g id="38f233e4-6ef8-4eb5-9bc2-44a3fcf86713">
+  <text style="font-size:12px;text-anchor:end;" x="146px" y="15px">Setting:Clock_Setting</text>
+  <rect x="146px" y="18px" width="16px" height="16px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  <line x1="136px" y1="26px" x2="146px" y2="26px"
+    style="stroke:rgb(255,255,255);stroke-width:1px"/>
+  <circle cx="128px" cy="26px" r="8px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  </g>
+  </defs>
+  <use xlink:href="#36210882-4993-4f88-8213-b9dd701e0383" transform="translate(38,20)" />
+  <use xlink:href="#38f233e4-6ef8-4eb5-9bc2-44a3fcf86713" transform="translate(0,60)" />
+  <rect x="162px" y="0px" width="230px" height="35px"
+    style="fill:rgb(255,255,255);fill-opacity:0.3;stroke:rgb(255,255,255);stroke-width:1px"/>
+  <text style="font-size:10px;text-anchor:middle;" x="277px" y="13px">&lt;&lt;Component_Type&gt;&gt;</text>
+  <text style="font-size:12px;text-anchor:middle;font-weight:bold;" x="277px" y="28px">Clock</text>
+  <rect x="162px" y="35px" width="230px" height="170px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  <text style="font-size:12px;" x="172px" y="48px">The Clock component type allows</text>
+  <text style="font-size:12px;" x="172px" y="63px">to measure the time.</text>
+  <text style="font-size:12px;" x="172px" y="78px">It is based on the</text>
+  <text style="font-size:12px;" x="172px" y="93px">micro-controller timestamp.</text>
+  <text style="font-size:12px;" x="172px" y="108px">It provides services to set its</text>
+  <text style="font-size:12px;" x="172px" y="123px">current data (day, hour, minute,</text>
+  <text style="font-size:12px;" x="172px" y="138px"> second).</text>
+  <text style="font-size:12px;" x="172px" y="153px">It shall be cyclically triggered</text>
+  <text style="font-size:12px;" x="172px" y="168px"> (at least twice a second to</text>
+  <text style="font-size:12px;" x="172px" y="183px">provide accurate data) using the</text>
+  <text style="font-size:12px;" x="172px" y="198px"> Tick() method.</text>
+  <rect x="162px" y="205px" width="230px" height="20px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  <rect x="162px" y="225px" width="230px" height="20px"
+    style="fill:rgb(255,255,255);fill-opacity:0.2;stroke:rgb(255,255,255);stroke-width:1px"/>
+  <text style="font-size:12px;" x="172px" y="238px">+ Tick()</text>
+  </g>
+  </defs>
+  <use xlink:href="#127e3ae9-7752-4f19-b003-78477f9d1ba2" transform="translate(250,200)" />
+  </g>
+  </defs>
+
+  <use xlink:href="#127e3ae9-7752-4f19-b003-78477f9d1ba2_alt" transform="translate(20,20)" />
+</svg>

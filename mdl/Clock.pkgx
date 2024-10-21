@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Top_Level_Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Clock</Name>
+  <Identifier>d12812ac-0678-4bf2-94b3-ba8256501086</Identifier>
+  <Description>Gathers software elements allowing to use a clock on an embedded software.</Description>
+  <Packages />
+  <Types>
+    <Enumerated_Type>
+      <Name>E_Day</Name>
+      <Identifier>09fdb16f-5379-4e8c-b005-77e07f32f789</Identifier>
+      <Description>Allows to model a data that represent a day of the week.</Description>
+      <Enumerals>
+        <Enumeral>
+          <Name>MONDAY</Name>
+          <Identifier>a6a08ed5-6479-4de4-bfab-c4c530853bbd</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>TUESDAY</Name>
+          <Identifier>c5db5ea6-520f-4b02-a301-ea0464c0e460</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>WEDNESDAY</Name>
+          <Identifier>eaf1f14a-c186-4da6-ab08-7848f059cd5d</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>THURSDAY</Name>
+          <Identifier>e775c007-d4dd-4994-888a-a8ce31b2c119</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>FRIDAY</Name>
+          <Identifier>ddcd23b3-0e2f-4eb1-a816-08e2eaed2135</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>SATURDAY</Name>
+          <Identifier>9d48423b-6a94-416b-92a7-54c09e9f48c5</Identifier>
+          <Description />
+        </Enumeral>
+        <Enumeral>
+          <Name>SUNDAY</Name>
+          <Identifier>0cda94d4-a169-44ea-b0df-ee7f2e3e4c8a</Identifier>
+          <Description />
+        </Enumeral>
+      </Enumerals>
+    </Enumerated_Type>
+  </Types>
+  <Interfaces>
+    <Client_Server_Interface>
+      <Name>Clock_Setting</Name>
+      <Identifier>f32261cc-952b-4429-ba87-e00f4f02d761</Identifier>
+      <Description>Gathers operations allowing to set a clock.</Description>
+      <Operations>
+        <Client_Server_Operation>
+          <Name>Set_Clock</Name>
+          <Identifier>827ded4e-6fee-475f-aadb-1a3d542e2a97</Identifier>
+          <Description>Allows to set all the fields of a clock.</Description>
+          <Parameters>
+            <Operation_Parameter>
+              <Name>day</Name>
+              <Identifier>1e1626e0-3c92-4e32-a891-3af877d3cdf7</Identifier>
+              <Description>Desired current day of the clock.</Description>
+              <Referenced_Type_Id>09fdb16f-5379-4e8c-b005-77e07f32f789</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>hour</Name>
+              <Identifier>7bef1f90-1a91-464f-a330-75d05a925e65</Identifier>
+              <Description>Desired current hour of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>minute</Name>
+              <Identifier>c9b615a9-f989-4e85-af01-88c04ec59b13</Identifier>
+              <Description>Desired current minute of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>second</Name>
+              <Identifier>d29444f9-02ac-4ea3-a643-99933d489c74</Identifier>
+              <Description>Desired current second of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Increment_Day</Name>
+          <Identifier>c1abf04e-d498-46be-9c94-d775ee27c7d2</Identifier>
+          <Description>Allows to increment the current day of the clock, from MONDAY to SUNDAY.
+If the current day is SUNDAY, it will be MONDAY after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Increment_Hour</Name>
+          <Identifier>b4439c9c-0322-49c6-ad73-7a5989e40868</Identifier>
+          <Description>Allows to increment the current hour of the clock, from 0 to 23.
+If the current hour is 23, it will be 0 after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Increment_Minute</Name>
+          <Identifier>17f72d93-2207-401d-9b1f-e574427d6549</Identifier>
+          <Description>Allows to increment the current  minute of the clock, from 0 to 59.
+If the current minute is 59, it will be 0 after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Increment_Second</Name>
+          <Identifier>816a4328-3c16-4e77-ba3a-649ee2b5be4b</Identifier>
+          <Description>Allows to increment the current second of the clock, from 0 to 59.
+If the current second is 59, it will be 0 after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Decrement_Day</Name>
+          <Identifier>d4d5282f-fb96-4fe9-8ab0-6b207d396564</Identifier>
+          <Description>Allows to decrement the current day of the clock, from SUNDAY to MONDAY.
+If the current day is MONDAY, it will be SUNDAY after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Decrement_Hour</Name>
+          <Identifier>73155349-6483-4dbc-bc3b-87c1538deab7</Identifier>
+          <Description>Allows to decrement the current hour of the clock, from 23 to 0.
+If the current hour is 0, it will be 23 after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Decrement_Minute</Name>
+          <Identifier>d37e1421-19cf-4df8-9610-776d602d1857</Identifier>
+          <Description>Allows to decrement the current minute of the clock, from 59  to 0.
+If the current hour is 59, it will be 0 after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Decrement_Second</Name>
+          <Identifier>01cdca23-38ba-447d-84aa-426f50b44c6a</Identifier>
+          <Description>Allows to decrement the current second of the clock, from 59  to 0.
+If the current second is 59, it will be 0 after the call of the operation.</Description>
+          <Parameters />
+        </Client_Server_Operation>
+      </Operations>
+    </Client_Server_Interface>
+    <Client_Server_Interface>
+      <Name>Clock_Data</Name>
+      <Identifier>7305b938-f013-43f1-8a8c-408622d9007c</Identifier>
+      <Description>Gathers operations allowing to access the data of a clock.</Description>
+      <Operations>
+        <Client_Server_Operation>
+          <Name>Get_Clock</Name>
+          <Identifier>56f09292-9490-46ab-ba42-4778f63d6332</Identifier>
+          <Description>Allows to retrieve the clock fields.</Description>
+          <Parameters>
+            <Operation_Parameter>
+              <Name>day</Name>
+              <Identifier>47b97c7a-24de-439d-b79c-a3c65b820165</Identifier>
+              <Description>Current day of the clock.</Description>
+              <Referenced_Type_Id>09fdb16f-5379-4e8c-b005-77e07f32f789</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>hour</Name>
+              <Identifier>47a9ed18-c602-4553-b918-473f770de039</Identifier>
+              <Description>Current hour of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>minute</Name>
+              <Identifier>873b7fa0-f5a7-4a54-aaa6-0982c59be0af</Identifier>
+              <Description>Current minute of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+            <Operation_Parameter>
+              <Name>second</Name>
+              <Identifier>5cf0c046-8a84-4ed2-bf5a-8b99b04d0a2d</Identifier>
+              <Description>Current second of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Get_Day</Name>
+          <Identifier>94604c40-300c-44e7-9f74-e09e6a36719d</Identifier>
+          <Description>Allows to retrieve the day of the clock.</Description>
+          <Parameters>
+            <Operation_Parameter>
+              <Name>day</Name>
+              <Identifier>ca73df84-4eca-41da-bded-15be30cdf225</Identifier>
+              <Description>Current day of the clock.</Description>
+              <Referenced_Type_Id>09fdb16f-5379-4e8c-b005-77e07f32f789</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Get_Hour</Name>
+          <Identifier>a9c15ad3-9823-4965-9e27-261631a14ee4</Identifier>
+          <Description>Allows to retrieve the hour of the clock.</Description>
+          <Parameters>
+            <Operation_Parameter>
+              <Name>hour</Name>
+              <Identifier>fde0f4ea-ceaf-45f6-92b3-c6b67d4dadba</Identifier>
+              <Description>Current hour of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Get_Minute</Name>
+          <Identifier>130466d1-0379-4950-bba6-5354bca27447</Identifier>
+          <Description>Allows to retrieve the minute of the clock.</Description>
+          <Parameters>
+            <Operation_Parameter>
+              <Name>minute</Name>
+              <Identifier>b141cd97-a5b1-4e64-9243-cc9e17252e66</Identifier>
+              <Description>Current minute of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+        <Client_Server_Operation>
+          <Name>Get_Second</Name>
+          <Identifier>0ee08162-b04d-4731-a328-f9e88fdd9ffe</Identifier>
+          <Description>Allows to retrieve the second of the clock.</Description>
+          <Parameters>
+            <Operation_Parameter>
+              <Name>second</Name>
+              <Identifier>089f838b-da01-40cb-9df5-3cb65358455c</Identifier>
+              <Description>Current second of the clock.</Description>
+              <Referenced_Type_Id>058963e7-375f-4f57-aceb-5a2f36b75490</Referenced_Type_Id>
+              <Direction>INPUT</Direction>
+            </Operation_Parameter>
+          </Parameters>
+        </Client_Server_Operation>
+      </Operations>
+    </Client_Server_Interface>
+  </Interfaces>
+  <Component_Types>
+    <Component_Type>
+      <Name>Clock</Name>
+      <Identifier>127e3ae9-7752-4f19-b003-78477f9d1ba2</Identifier>
+      <Description>The Clock component type allows to measure the time.
+It is based on the micro-controller timestamp.
+It provides services to set its current data (day, hour, minute, second).
+It shall be cyclically triggered (at least twice a second to provide accurate data) using the Tick() method.</Description>
+      <Configurations />
+      <Operations>
+        <OS_Operation>
+          <Name>Tick</Name>
+          <Identifier>92de695e-4de2-4bcf-b213-ed0e2e718604</Identifier>
+          <Description>The Clock component is active and need to be periodically triggered using this operation.
+It shall be called at least twice a second.</Description>
+        </OS_Operation>
+      </Operations>
+      <Provider_Ports>
+        <Provider_Port>
+          <Name>Data</Name>
+          <Identifier>36210882-4993-4f88-8213-b9dd701e0383</Identifier>
+          <Description />
+          <Referenced_Interface_Id>7305b938-f013-43f1-8a8c-408622d9007c</Referenced_Interface_Id>
+        </Provider_Port>
+        <Provider_Port>
+          <Name>Setting</Name>
+          <Identifier>38f233e4-6ef8-4eb5-9bc2-44a3fcf86713</Identifier>
+          <Description />
+          <Referenced_Interface_Id>f32261cc-952b-4429-ba87-e00f4f02d761</Referenced_Interface_Id>
+        </Provider_Port>
+      </Provider_Ports>
+      <Requirer_Ports />
+    </Component_Type>
+  </Component_Types>
+  <Compositions />
+</Top_Level_Package>
